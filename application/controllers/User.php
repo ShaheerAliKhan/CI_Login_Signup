@@ -46,7 +46,7 @@ class User extends CI_controller {
         $this->User_model->updateUser($userId,$formArray);
         $this->session->set_flashdata('success','Record updated');
 
-        redirect(base_url().'index.php/user/index');
+        // redirect(base_url().'index.php/user/index');
 
     }
 }
