@@ -17,6 +17,11 @@ class User_model extends CI_Model {
         $this->db->where('id', $userId);
         $this->db->update('stud',$formArray);
     }
+
+    function deleteUser($userId) {
+        $this->db->where('id',$userId);
+        $this->db->delete('stud');
+    }
     
 }
 
